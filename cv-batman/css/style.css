@@ -1,0 +1,42 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    text-align: center;
+    background-color: #E6E6E6 ;
+    
+}
+h1{
+    margin: 0;
+    letter-spacing: 10px;
+    background-color: #C4C4C4;
+    text-align: center;
+    color:#005677 ;
+}
+main{
+    margin: 117px;
+}
+h2{
+    background-color: #E6E6E6;
+    color: #005677;
+    letter-spacing: 5px;
+}
+i{
+    font-weight: bold;
+}
+.lic{
+    padding-left: 80px;
+}
+footer{
+    background-color: #005677;
+    color: #FFFFFF;
+    text-align:center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#imagenes{
+    padding: 10px;
+}
+
