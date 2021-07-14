@@ -9,7 +9,7 @@
 <body>
     <h1>Portafolio Rodrigo Cabrera Horn</h1>
     <ul>
-        <li><a href="./LemonPie/index.html">Lemon Pie</a></li>
+        <li><a href="./cv-batman/index.html">CV Batman</a></li>
     </ul>
 </body>
 </html>
