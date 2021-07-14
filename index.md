@@ -10,6 +10,7 @@
     <h1>Portafolio Rodrigo Cabrera Horn</h1>
     <ul>
         <li><a href="./cv-batman/index.html">CV Batman</a></li>
+        <li><a href="./petshop/index.html">Petshop</a></li>
     </ul>
 </body>
 </html>
