@@ -1,55 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Roboto;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Roboto;
 }
-
+h1,
+h2 {
+	font: 100;
+}
 .desc {
 	background-color: aqua;
-    padding: 10px 903px 10px 10px;
+	padding: 10px 903px 10px 10px;
+	font-weight: bold;
+	text-align: center;
 }
-header{
-    background-color: #00669f;
-    width: 100vw;
-    height: 101px;
+header {
+	background-color: #00669f;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 7px;
+	height: 101px;
+	position: sticky;
+	top: 0;
+	z-index: 10;
 }
 
 header h1 {
 	font-size: 40px;
-    padding: 28px 868px 26px 28px;
+	padding: 28px 868px 26px 28px;
 }
-.seccion_padre{
-    display: flex;
-    background-color: #E5E5E5;
-    justify-content: center;
-    height: 700px;
+.div_abuelo {
+	background-color: aqua;
+	display: flex;
+	height: 935px;
+	justify-content: center;
+	align-items: center;
 }
-article{
-    background: #F3F3F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    height: 529px;
-    width: 300px;
-    border-radius: 16px 16px 0px 0px;
-    margin: 15px;
-    position: relative;
+.seccion_padre {
+	display: flex;
+	background-color: #17ff5163;
+	justify-content: center;
+	height: 530px;
+	width: 960px;
 }
-.foto_perfil{
-    border-radius: 50%;
-    position: absolute;
-    left: 90px;
-    top: 128px;
+/* comentarios 
+asdasd
+asdas
+d*/
+article {
+	background: #f3f3f3;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	height: 529px;
+	width: 300px;
+	border-radius: 16px 16px 0px 0px;
+	margin: 15px;
+	position: relative;
 }
-.corazon_perfil{
-    position: absolute;
-    left: 21px;
-    top: 16px;
+.foto_perfil {
+	border-radius: 50%;
+	position: absolute;
+	left: 90px;
+	top: 128px;
+}
+.corazon_perfil {
+	position: absolute;
+	left: 21px;
+	top: 16px;
 }
 footer {
 	background-color: #00669f;
 	color: white;
 	padding: 16px 671px 16px 16px;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	width: 100%;
 }

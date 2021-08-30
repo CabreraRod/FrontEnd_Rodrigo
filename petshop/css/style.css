@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Roboto;
+    
+}
+.ofertas_comedero {
+	background-color: #222222;
+	width: 100vw;
+    color: white;
+    font-size: 10px;
+    padding: 4px 796px 4px 90px;
+}
+.idioma{
+    position: absolute;
+    right: 60px;
+    top: 4px;
+}
+header{
+    background-color: #F0A83E;
+    padding: 19px 818px 20px 40px;
+    background-image: "img/pawprint 1.png" alt="";
+}

@@ -8,10 +8,9 @@
 <body>
     <h1>Portafolio Rodrigo Cabrera Horn</h1>
     <ul>
+        <li><a href="./loruki-webpage/index.html">Final Proyect | Loruki Cloud</a></li>
         <li><a href="./heroes/index.html">Heroes</a></li>
-        <li><a href="./cv-personal/index.html">CV Rodrigo Cabrera</a></li>
         <li><a href="./cv-batman/index.html">CV Batman</a></li>
-        <li><a href="./petshop/index.html">Petshop</a></li>
         <li><a href="./LemonPie/index.html">Lemon Pie</a></li>
     </ul>
 </body>
