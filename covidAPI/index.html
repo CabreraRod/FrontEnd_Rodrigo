@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+			integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+			crossorigin="anonymous"
+		/>
+		<title>Covid-19 API with JS</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="text-center mt-5">Covid-19 Live data</h1>
+			<br /><br />
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>Total Covid Cases</th>
+						<th>Total Deaths</th>
+						<th>Date</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr id="data"></tr>
+				</tbody>
+			</table>
+			<div class="text-center">
+				<button
+					onclick="refreshData()"
+					class="btn btn-danger btn-blocks text-center"
+				>
+					Refresh Data
+				</button>
+			</div>
+		</div>
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			init();
+		});
+
+		function init() {
+			var url = "https://api.covid19api.com/summary";
+			var data = "";
+			$.get(url, function (data) {
+				console.log(data);
+				data = `
+                        
+                            <td>${data.Global.TotalConfirmed}</td>
+                            <td>${data.Global.TotalDeaths}</td>
+                            <td>${data.Global.Date}</td>
+                    `;
+				$("#data").html(data);
+			});
+		}
+
+		function refreshData() {
+			clearData();
+			init();
+		}
+		function clearData() {
+			$("#data").empty();
+			init();
+		}
+	</script>
+</html>
