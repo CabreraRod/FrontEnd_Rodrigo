@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+			integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <title>Registrarse</title>
+</head>
+<body>
+    <!-- Nav bar -->
+    <div class="navbar">
+        <div class="container flex">
+            <img src="imagenes/logohome.svg" alt="" class="logo">
+            <h1 class="logo">UCH</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sistemas.html">Sistemas</a></li>
+                    <li><a href="diseño.html">Diseño</a></li>
+                    <li><a href="register.html">Registrarse</a></li>
+                </ul>
+            </nav>
+            <img src="imagenes/logohome.svg" alt="" class="logo">
+        </div>
+    </div>
+    <div class="showcase-form card">
+        <h2>Registrarse UCH</h2>
+        <form class="formulario">
+            <div class="form-control">
+                <input type="text" name="name" placeholder="Name" required />
+            </div>
+            <div class="form-control">
+                <input
+                    type="text"
+                    name="direccion"
+                    placeholder="Direccion"
+                    required
+                />
+            </div>
+            <div class="form-control">
+                <input
+                    type="number"
+                    name="telefono"
+                    placeholder="Telefono"
+                    required
+                />
+            </div>
+            <div class="form-control">
+                <input
+                    type="date"
+                    name="fechaNacimiento"
+                    placeholder="fechaNacimiento"
+                    required
+                />
+            </div>
+            <div class="form-control">
+                <input type="radio" name="sex" value="male" /> Male
+                <br />
+                <input type="radio" name="sex" value="female" /> Female
+            </div>
+            <div class="form-control">
+                <input type="email" name="email" placeholder="Email" required />
+            </div>
+            <div class="form-control">
+                <input
+                    type="text"
+                    name="comentarios"
+                    placeholder="Comentarios"
+                    maxlength="140"
+                />
+            </div>
+            <div class="form-control">
+                <input
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                    required
+                />
+            </div>
+            <div class="form-control">
+                <input
+                    type="password"
+                    name="repeatPassword"
+                    placeholder="Repeat Password"
+                    required
+                />
+            </div>
+            <input type="reset" class="btn btn-primary" />
+            <input type="submit" value="Enviar" class="btn btn-primary" />
+        </form>
+    </div>
+</div>
+</section>
+<!--  Footer -->
+<footer class="footer bg-terciary py-5">
+    <div class="container grid grid-3">
+        <div>
+            <h1>Universidad Vhampagnat</h1>
+            <p>Copyright &copy; Rodrigo Cabrera 2021</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="docs.html">Docs</a></li>
+            </ul>
+        </nav>
+        <div class="social">
+            <a href="https://github.com/CabreraRod"
+                ><i class="fab fa-github fa-2x"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/rodrigo-cabrera-horn/"
+                ><i class="fab fa-linkedin fa-2x"></i
+            ></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
