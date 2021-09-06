@@ -1,0 +1,109 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin-top: 200px;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.table {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	padding: 3px;
+}
+
+.caption {
+	display: table-caption;
+	text-align: center;
+	font-weight: bold;
+}
+
+.thead {
+	display: table-header-group;
+	font-weight: bold;
+}
+
+.tbody {
+	display: table-row-group;
+}
+
+.tr {
+	display: table-row;
+}
+
+.th {
+	border-bottom: 1px dashed #cccccc;
+}
+
+.tr:nth-child(odd) {
+	background: #f5f5f5;
+}
+
+.th,
+.td {
+	display: table-cell;
+}
+
+.td {
+	padding: 10px 0;
+}
+
+.label {
+	display: none;
+}
+
+@media all and (max-width: 600px) {
+	.thead {
+		display: none;
+	}
+	.tr {
+		display: block;
+		margin-bottom: 1.5em;
+		padding: 10px;
+	}
+	.td {
+		display: inherit;
+		padding: 0;
+	}
+	.label {
+		font-weight: bold;
+		display: inline-block;
+		min-width: 120px;
+	}
+}
+.fill {
+	font-size: 20px;
+	font-weight: 200;
+	letter-spacing: 1px;
+	padding: 13px 50px 13px;
+	outline: 0;
+	border: 1px solid black;
+	cursor: pointer;
+	position: relative;
+	background-color: rgba(0, 0, 0, 0);
+    margin-top: 50px;
+    margin-left: 250px;
+}
+
+.fill::after {
+	content: "";
+	background-color: #ffe54c;
+	width: 100%;
+	z-index: -1;
+	position: absolute;
+	height: 100%;
+	top: 7px;
+	left: 7px;
+	transition: 0.2s;
+}
+
+.fill:hover::after {
+	top: 0px;
+	left: 0px;
+}
+/* End of Fill Button  */
